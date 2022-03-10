@@ -9,10 +9,10 @@ public class Helper {
                 return(i);
             }
         }
-        return 0;
+        return -1;
     }
 
     public static char find_letter(int n){
-        return alphabet[n];
+        return alphabet[(n + alphabet.length) % alphabet.length];
     }
 }
